@@ -33,6 +33,7 @@ server.post("/signup", (req, res) => {
     }
 
     bcrypt.hash(password, 10, (err, hashed_password) => {
+        let username = 'as';
         console.log(hashed_password);
     })
 
